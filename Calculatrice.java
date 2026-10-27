@@ -5,24 +5,24 @@ import java.util.Scanner;
 
 public class Calculatrice {
 
-    // ── Opérations de base / Grundrechenarten ────────────────────────────
+    // ── Opérations de base  ────────────────────────────
 
-    /** Addition / Addition */
+    /** Addition */
     public static double additionner(double a, double b) {
         return a + b;
     }
 
-    /** Soustraction / Subtraktion */
+    /** Soustraction */
     public static double soustraire(double a, double b) {
         return a - b;
     }
 
-    /** Multiplication / Multiplikation */
+    /** Multiplication */
     public static double multiplier(double a, double b) {
         return a * b;
     }
 
-    /** Division — vérifie la division par zéro / Division mit Nullprüfung */
+    /** Division — vérifie la division par zéro */
     public static double diviser(double a, double b) {
         if (b == 0) {
             System.out.println(" Fehler: Division durch Null nicht erlaubt!");
@@ -31,12 +31,12 @@ public class Calculatrice {
         return a / b;
     }
 
-    /** Puissance / Potenz */
+    /** Puissance */
     public static double puissance(double base, double exposant) {
         return Math.pow(base, exposant);
     }
 
-    /** Racine carrée / Quadratwurzel */
+    /** Wurzel */
     public static double racine(double n) {
         if (n < 0) {
             System.out.println(" Fehler: Keine reelle Wurzel aus negativer Zahl!");
@@ -85,7 +85,7 @@ public class Calculatrice {
                 continue;
             }
 
-            // Pour les opérations binaires / Für zweistellige Operationen
+            // Für zweistellige Operationen
             if (choix >= 1 && choix <= 5) {
                 System.out.print("  Erste Zahl:  ");
                 a = sc.nextDouble();
@@ -100,7 +100,7 @@ public class Calculatrice {
                 case 4 -> resultat = diviser(a, b);
                 case 5 -> resultat = puissance(a, b);
                 default -> {
-                    System.out.println("❌ Ungültige Auswahl.");
+                    System.out.println(" Ungültige Auswahl.");
                     continue;
                 }
             }
