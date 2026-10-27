@@ -1,4 +1,4 @@
-# Taschenrechner (Java) 🧮
+# Taschenrechner (Java) 
 
 Einfacher Konsolentaschenrechner in Java mit 6 Operationen.
 
@@ -8,9 +8,9 @@ Einfacher Konsolentaschenrechner in Java mit 6 Operationen.
 - Scanner für Benutzereingaben
 
 ## Funktionen
-- ➕ Addition, ➖ Subtraktion, ✖️ Multiplikation, ➗ Division
-- 🔢 Potenz (xⁿ)
-- √ Quadratwurzel
+-  Addition,  Subtraktion,  Multiplikation,  Division
+- Potenz (xⁿ)
+-  Quadratwurzel
 - Fehlerbehandlung: Division durch Null, negative Wurzel
 
 ## Kompilieren & Ausführen
