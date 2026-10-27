@@ -25,7 +25,7 @@ public class Calculatrice {
     /** Division — vérifie la division par zéro / Division mit Nullprüfung */
     public static double diviser(double a, double b) {
         if (b == 0) {
-            System.out.println("❌ Fehler: Division durch Null nicht erlaubt!");
+            System.out.println(" Fehler: Division durch Null nicht erlaubt!");
             return Double.NaN;
         }
         return a / b;
@@ -39,7 +39,7 @@ public class Calculatrice {
     /** Racine carrée / Quadratwurzel */
     public static double racine(double n) {
         if (n < 0) {
-            System.out.println("❌ Fehler: Keine reelle Wurzel aus negativer Zahl!");
+            System.out.println(" Fehler: Keine reelle Wurzel aus negativer Zahl!");
             return Double.NaN;
         }
         return Math.sqrt(n);
@@ -51,7 +51,7 @@ public class Calculatrice {
         boolean continuer = true;
 
         System.out.println("╔══════════════════════════════╗");
-        System.out.println("║      TASCHENRECHNER  🧮      ║");
+        System.out.println("║       TASCHENRECHNER         ║");
         System.out.println("╚══════════════════════════════╝");
 
         while (continuer) {
@@ -68,7 +68,7 @@ public class Calculatrice {
             int choix = sc.nextInt();
 
             if (choix == 0) {
-                System.out.println("\n👋 Auf Wiedersehen!");
+                System.out.println("\n Auf Wiedersehen!");
                 continuer = false;
                 continue;
             }
@@ -114,7 +114,7 @@ public class Calculatrice {
                     case 5 -> "^";
                     default -> "?";
                 };
-                System.out.printf("%n  ✅ %.4f %s %.4f = %.4f%n", a, op, b, resultat);
+                System.out.printf("%n   %.4f %s %.4f = %.4f%n", a, op, b, resultat);
             }
         }
 
